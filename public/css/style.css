@@ -1,0 +1,48 @@
+.fundo-verde{
+    background-color: #84B026;
+}
+
+.padd-padrao{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bg-preto{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 8px;
+}
+
+.sub-titulo{
+    /* largura do elemento igual largura do texto */
+    width: fit-content;
+    /* centraliza a caixa no recipiente <body> */
+    margin: 0 auto;
+}
+
+.seta-sobe{position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 6px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+        color: #fff;
+        display: none;
+}
+.seta-sobe:hover{
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#banner-top{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#banner-top .carousel-caption{
+    padding: 6px;
+    background-color: rgba(10, 10, 10, 0.50);
+}
