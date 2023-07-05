@@ -579,6 +579,7 @@
             <h2 class="sub-titulo border-5 border-secondary border-bottom mb-3">
                 Cadastre-se
             </h2>
+            <p class="text-center">Entre em contato conosco para saber da possibilidade de descarte de outros materiais (Exemplo: Bateria de carro)</p>
 
             <form action="processa.php" method="POST" enctype="multipart/form-data" class="container">
                 <div class="mb-3">
@@ -606,11 +607,11 @@
                     <label class="form-check-label" for="sexo">Outros</label>
                 </div>
 
-                <p class="mt-4">Envie uma foto para nós do que irá descartar (opcional)</p>
+                <!-- <p class="mt-4">Envie uma foto para nós do que irá descartar (opcional)</p>
                 <div class="mb-3">
                     <label for="arquivo" class="form-label">Selecione o arquivo</label>
                     <input type="file" class="form-control" name="arquivo" placeholder=".jpg, .png, .gif">
-                </div>
+                </div> -->
 
                 <div class="mb-3">
                     <label for="estados" class="form-label">Em qual bairro você mora?</label>
