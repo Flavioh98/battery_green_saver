@@ -284,38 +284,18 @@
 
                             <div class="card">
                                 <div class="card-header bg-secondary text-center text-white">
-                                </div>
+                                </div> 
+                                
                                 <div class="card-body">
                                     <ul class="list-group list-group-flush text-center">
-                                        <li class="list-group-item"><strong>Batalhão da Polícia Militar</strong>
-                                            <p>R. Genésia Beraldinelli Tarantino, 1.000 - Jd. São José</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Câmara Municipal</strong>
-                                            <p>R. Des. Francisco Murilo Pinto, 33 - Vila Santa Luzia</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Mercado Municipal</strong>
-                                            <p>Trav. Chico Luís, 56 - Centro</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>OAB</strong>
-                                            <p>Rua Engenheiro João Fonseca dos Santos, nº 108 - Vila Adyana</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Paço Municipal</strong>
-                                            <p>R. José de Alencar, 123 - Vila Santa Luzia</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Parque Santos Dumont</strong>
-                                            <p>R. Prudente Meireles de Moraes, 100 - Vila Adyana</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Parque Vicentina Aranha</strong>
-                                            <p>R. Prudente Meireles de Moraes, s/n - Vila Adyana</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Term. Rodoviário Municipal</strong>
-                                            <p>Av. Rui Barbosa, 400 - Vila Santa Helena</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Hospital Antoninho da Rocha Marmo</strong>
-                                            <p>Av. Heitor Villa Lobos, 1961 - Jardim Renata</p>
-                                        </li>
+                                        @foreach($Central as $localCentro)
+                                            <li class="list-group-item"><strong>{{$localCentro->Nome}}</strong>
+                                                <p>{{$localCentro->Endereco}}</p>
+                                            </li>
+                                        @endforeach
                                     </ul>
                                 </div>
+                                
                             </div> 
                         </div>
                     </div>
