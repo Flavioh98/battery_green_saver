@@ -3,22 +3,20 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ColetaController;
 
-Route::get('/', function () {
-    return view('app');
-});
+Route::get('/', [ColetaController::class, 'read']);
 
 Route::get('/politica', function () {
     return view('politica');
 })->name('politica'); 
 
+Route::get('/admin', function () {
+    return view('auth.login');
+})->name('admin'); 
+
 // Route::get('/criar', function () {
     // return view('criar'); 
     Route::get('/criar', [ColetaController::class, 'criar'])->name('criar');
 // })->name('criar'); 
-
-Route::get('/admin', function () {
-    return view('auth.login');
-})->name('admin'); 
 
 Route::middleware([
     'auth:sanctum',

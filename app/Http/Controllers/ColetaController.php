@@ -19,7 +19,7 @@ class ColetaController extends Controller
         //Grava na tabela do BD
         $Ponto_coleta->save();
 
-        return redirect('dashboard');
+        return view('dashboard');
     }
 
     //R do CRUD

@@ -313,55 +313,17 @@
                             <div class="card">
                                 <div class="card-header bg-secondary text-center text-white">
                                 </div>
+
                                 <div class="card-body">
                                     <ul class="list-group list-group-flush text-center">
-                                        <li class="list-group-item"><strong>Casa de Cultura Rancho do Tropeiro Ernesto
-                                                Vilela</strong>
-                                            <p>R. Ambrósio Molina, 184 - Eugênio de Melo</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Centro Comercial Vista Verde</strong>
-                                            <p>R. Argentina, s/n - Vista Verde</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>EMEF Geraldo de Almeida</strong>
-                                            <p>R. Camomila, 100 - Chác. Pousada do Vale</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>EMEFI Prof. Possidônio Salles</strong>
-                                            <p>Rua Benedito Eras, s/nº - Jardim Americano</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>EMEI-Prof.Olga Franco Custódio</strong>
-                                            <p>Av. das Rosas, 232 - Jardim Motorama</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Espaço Cultural Chico Triste</strong>
-                                            <p>R. Milton Cruz, s/n - Vila Tesouro</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Espaço Cultural Eugênia da Silva</strong>
-                                            <p> R. dos Carteiros, 110 - Novo Horizonte</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Parque Tecnológico - Urbam Technology
-                                                Center</strong>
-                                            <p> Estrada Dr. Altino Bondensan, 500 - Eugênio de Melo</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Secretaria de Proteção ao Cidadão</strong>
-                                            <p>R. Felício Savastano, 401 - Vila Industrial</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Museu Interativo de Ciências (MIC)</strong>
-                                            <p>Rua Felício Savastano S/N, Vila Industrial</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Sociedade Amigos da Cidade Vista Verde
-                                                SAVIVER</strong>
-                                            <p>R. Malvinas, 93 - Vista Verde</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Subprefeitura de Eugênio de Melo</strong>
-                                            <p>R. XV de Novembro, 259 - Eugênio de Melo</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Terminal Rodoviário Intermunicipal</strong>
-                                            <p>R. Itororó, 221 - Vila Piratininga</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>URBAM (sede)</strong>
-                                            <p>R. Ricardo Edwards, 100 - Vila Industrial</p>
-                                        </li>
+                                    @foreach($Leste as $localLeste)
+                                            <li class="list-group-item"><strong>{{$localLeste->Nome}}</strong>
+                                                <p>{{$localLeste->Endereco}}</p>
+                                            </li>
+                                        @endforeach
                                     </ul>
                                 </div>
+
                             </div>    
                         </div>
                     </div>
@@ -379,28 +341,17 @@
                             <div class="card">
                                 <div class="card-header bg-secondary text-center text-white">
                                 </div>
+
                                 <div class="card-body">
                                     <ul class="list-group list-group-flush text-center">
-                                        <li class="list-group-item"><strong>Centro Comunitário Alto da Ponte</strong>
-                                            <p>R. Alziro Lebrão, s/n - Jd. Maritéia</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Centro Poliesportivo Altos de Santana</strong>
-                                            <p>Av. Altos do Rio Doce, 801 - Altos de Santana</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Hospital Pio XII</strong>
-                                            <p>R. Paraguassú, 51 - Santana</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Parque Alberto Simões</strong>
-                                            <p>Av. Pico das Agulhas Negras, 112 - Jardim Altos de Santana</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Parque da Cidade</strong>
-                                            <p>Av. Olívo Gomes, 100 - Santana</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>UBS São Francisco Xavier</strong>
-                                            <p> Rua 15 de novembro, s/n - Distrito de São Francisco Xavier</p>
-                                        </li>
+                                    @foreach($Norte as $localNorte)
+                                            <li class="list-group-item"><strong>{{$localNorte->Nome}}</strong>
+                                                <p>{{$localNorte->Endereco}}</p>
+                                            </li>
+                                        @endforeach
                                     </ul>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -417,22 +368,17 @@
                             <div class="card">
                                 <div class="card-header bg-secondary text-center text-white">
                                 </div>
+
                                 <div class="card-body">
                                     <ul class="list-group list-group-flush text-center">
-                                        <li class="list-group-item"><strong>EMEI - Professor Mário Campaner</strong>
-                                            <p>Praça Flamboyant,131-Jardim Indústrias</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Biblioteca Hélio Pinto Ferreira</strong>
-                                            <p>R. Prof. Henrique Jorge Guedes, 57 - Jd. das Indústrias</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Fórum Trabalhista</strong>
-                                            <p> Rua Juiz David Barrilli, 85 - Parque Res. Aquarius</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Paróquia São João Bosco</strong>
-                                            <p>R. Aimbiré, 50 - Jd. das Indústrias</p>
-                                        </li>
+                                    @foreach($Oeste as $localOeste)
+                                            <li class="list-group-item"><strong>{{$localOeste->Nome}}</strong>
+                                                <p>{{$localOeste->Endereco}}</p>
+                                            </li>
+                                        @endforeach
                                     </ul>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -451,23 +397,17 @@
                             <div class="card">
                                 <div class="card-header bg-secondary text-center text-white">
                                 </div>
+
                                 <div class="card-body">
                                     <ul class="list-group list-group-flush text-center">
-                                        <li class="list-group-item"><strong>EMEF Lúcia Pereira Rodrigues</strong>
-                                            <p>Pça. IV Centenário, 401 - Jd. Santa Fé</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Escola Marechal do Ar Casemiro Montenegro
-                                                Filho</strong>
-                                            <p>R. H23A, 1030 DCTA</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Escola Profa.Lúcia Maria do Amaral</strong>
-                                            <p>Rua José benedito de Almeida Pena,140-Jd.Santa Luzia</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>PEV DCTA</strong>
-                                            <p>DCTA, s/n - DCTA</p>
-                                        </li>
+                                    @foreach($Sudeste as $localSudeste)
+                                            <li class="list-group-item"><strong>{{$localSudeste->Nome}}</strong>
+                                                <p>{{$localSudeste->Endereco}}</p>
+                                            </li>
+                                        @endforeach
                                     </ul>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -484,67 +424,17 @@
                             <div class="card">
                                 <div class="card-header bg-secondary text-center text-white">
                                 </div>
+
                                 <div class="card-body">
                                     <ul class="list-group list-group-flush text-center">
-                                        <li class="list-group-item"><strong>46º Batalhão da Polícia Militar</strong>
-                                            <p>R. Joana Maria Corrêa Laranjeira, s/n - Conj. Res. 31 de Março</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Biblioteca Jansen Filho</strong>
-                                            <p>R. Mário Antonio da Fonseca, 410 - Campo dos Alemães</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Cedin Fernando Tão Azevedo</strong>
-                                            <p>Rua Bambuí,250-Jd.Satélite</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Centro da Juventude</strong>
-                                            <p>R. Aurora Pinto da Cunha, 131 - Jardim America</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Centro de Referência da Juventude</strong>
-                                            <p>R. Valparaíso, 640 - Jd. América</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>EMEI Padre João Marcondes Guimarães</strong>
-                                            <p>R. Tatuí, 27 - Bq. dos Eucaliptos</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>EMEI-Marianita de Oliveira Pereira
-                                                Santos</strong>
-                                            <p>R. Viçosa, 5 - Bosque dos Eucaliptos</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Espaço Cultural Flávio Craveiro</strong>
-                                            <p>R. Lênin, 200 - Dom Pedro I</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Espaço Cultural Tim Lopes</strong>
-                                            <p> Av. Ouro Fino, 2.520 - Bq. dos Eucaliptos</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Ginásio de Esportes Cidade Jardim</strong>
-                                            <p>Rua Itambé,71-Cidade Jardim</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Hospital Clínica Sul</strong>
-                                            <p>Pça. Natal, 55 - Pq. Industrial</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Paróquia Nossa Senhora Perpétuo
-                                                Socorro</strong>
-                                            <p>Av. Ângelo Belmiro Pintus, 320 - Campo dos Alemães</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>Poliesportivo João do Pulo</strong>
-                                            <p>Av.Perseu,180-Jardim Satélite</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>SESI</strong>
-                                            <p>Av. Cidade Jardim, 4.389 - Bq. dos Eucaliptos</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>UBS - Campo dos Alemães</strong>
-                                            <p>R. Dailia Marques Miguel, 39 - Campo dos Alemães</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>UBS - Bosque dos Eucalípitos</strong>
-                                            <p>Rua Maria Palmira Ferreira Ivo,155-Bosque dos Eucalíptos</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>UBS - Jardim Morumbi</strong>
-                                            <p>Av. Elísio Galdino Sobrinho, 08 - Cidade Morumbi</p>
-                                        </li>
-                                        <li class="list-group-item"><strong>UBS - Jardim Satélite</strong>
-                                            <p>Av. Andrômeda, 1960 - Jardim Satélite</p>
-                                        </li>
-
+                                    @foreach($Sul as $localSul)
+                                            <li class="list-group-item"><strong>{{$localSul->Nome}}</strong>
+                                                <p>{{$localSul->Endereco}}</p>
+                                            </li>
+                                        @endforeach
                                     </ul>
                                 </div>
+
                             </div>
                         </div>
                     </div>

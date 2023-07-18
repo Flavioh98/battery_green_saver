@@ -38,9 +38,9 @@ this.closest('form').submit(); " role="button">
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fundo-azul fixed-top">
+        <nav class="navbar navbar-expand-xl navbar-dark fixed-top fundo-verde">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="{{url('/')}}/imagens/Logo-projeto.png" width="110" alt="logo empresa" /></a>
+                <a class="navbar-brand" href="#"><img src="{{url('/')}}/imagens/LogoPrincipal.png" width="110" alt="logo empresa" /><a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -69,7 +69,7 @@ this.closest('form').submit(); " role="button">
     </header>
 
     <main class="mt-5 pt-5">
-        <h1 class="titulo text-center">Atualização de Pontos de Coleta:</h1>
+        <h1 class="titulo text-center mt-5">Cadastro de Pontos de Coleta:</h1>
 
         <div class="d-flex justify-content-center">
             <div class="card  tamanho-card ms-5 fundo-laranja">
